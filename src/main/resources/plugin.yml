@@ -1,0 +1,6 @@
+name: NightMCTabList
+version: ${project.version}
+main: xyz.nightmc.tappedlol.nightmctablist.NightMCTabList
+api-version: 1.13
+authors: [tappedlol]
+description: Customizable tablist header and footer
