@@ -35,6 +35,7 @@ public final class NightMCTabList extends JavaPlugin {
     public void saveList() {
         getConfig().set("header", header);
         getConfig().set("footer", footer);
+        saveConfig();
     }
 
     public List<String> getHeader() {
@@ -59,7 +60,7 @@ public final class NightMCTabList extends JavaPlugin {
 
     public boolean removeHeader(int i) {
         try {
-            getHeader().remove(i);
+            getHeader().remove(i - 1);
             saveList();
         } catch (IndexOutOfBoundsException e) {
             return false;
@@ -69,7 +70,7 @@ public final class NightMCTabList extends JavaPlugin {
 
     public boolean removeFooter(int i) {
         try {
-            getFooter().remove(i);
+            getFooter().remove(i - 1);
             saveList();
         } catch (IndexOutOfBoundsException e) {
             return false;
