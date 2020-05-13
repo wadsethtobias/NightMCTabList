@@ -14,7 +14,7 @@ public class JoinListener implements Listener {
 
     @EventHandler
     public void join(PlayerJoinEvent event) {
-        event.getPlayer().setPlayerListHeaderFooter(main.getFormatted(main.getHeader()), main.getFormatted(main.getFooter()));
+        main.setTab(event.getPlayer());
     }
 
 }
