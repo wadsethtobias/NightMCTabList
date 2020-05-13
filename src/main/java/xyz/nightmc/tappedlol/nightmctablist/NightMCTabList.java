@@ -48,11 +48,13 @@ public final class NightMCTabList extends JavaPlugin {
     public void addHeader(String s) {
         getHeader().add(s);
         saveList();
+        setTab();
     }
 
     public void addFooter(String s) {
         getFooter().add(s);
         saveList();
+        setTab();
     }
 
     public boolean removeHeader(int i) {
