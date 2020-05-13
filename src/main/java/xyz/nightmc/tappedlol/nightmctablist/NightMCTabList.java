@@ -62,6 +62,7 @@ public final class NightMCTabList extends JavaPlugin {
         try {
             getHeader().remove(i - 1);
             saveList();
+            setTab();
         } catch (IndexOutOfBoundsException e) {
             return false;
         }
@@ -72,6 +73,7 @@ public final class NightMCTabList extends JavaPlugin {
         try {
             getFooter().remove(i - 1);
             saveList();
+            setTab();
         } catch (IndexOutOfBoundsException e) {
             return false;
         }
